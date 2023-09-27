@@ -1,5 +1,6 @@
 ﻿@page "/square"
 
+@using SquareProject.Client.ViewModels;
 @using global::Pages.BaseClass;
 
 @inherits BasePage
@@ -9,4 +10,6 @@
 
 @code {
 
+    [Inject]
+    public ISquareViewModel? ViewModel { get; set; }
 }
